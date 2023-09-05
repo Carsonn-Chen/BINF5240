@@ -22,5 +22,5 @@ print("There are", sasp_len, "nucleotides in the SASP gene")
 count_sasp_acids = sasp_len/3
 print("There are", count_sasp_acids, "amino-acids in the SASP protein")
 
-GC_content = (sasp.count('C')+sasp.count('G') / sasp_len)*100
+GC_content = ((sasp.count('C')+sasp.count('G')) / sasp_len)*100
 print("the GC content (% G or C nucleotides) of the SASP gene is", GC_content, "%")
