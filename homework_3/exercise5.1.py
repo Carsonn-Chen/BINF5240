@@ -1,6 +1,6 @@
-# ctcf ChIP-PCR  primer
-ctcf_forward_primer = 'GAGAGGCTGACAGAGAGGAG'
-ctcf_reverse_primer = 'CCCATTTCTGCTCCACTTCT'
+# ctcf primer from PrimerBank (ID:300388141c1)
+ctcf_forward_primer = 'CAGTGGAGAATTGGTTCGGCA'
+ctcf_reverse_primer = 'CTGGCGTAATCGCACATGGA'
 
 def complement(nuc):
     nucleotides = 'ACTG'
