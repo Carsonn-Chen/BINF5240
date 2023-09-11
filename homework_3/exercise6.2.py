@@ -38,4 +38,6 @@ elif input_manipulation.lower() == 'reverse':
 
 elif input_manipulation.lower() == 'reversecomplement':
     print("The reversecomplement sequence is", reverseComplement(input_seq))
+else:
+    print("Please make sure you enter the correct operation name among complement, reverse and reversecomplement.")
     
