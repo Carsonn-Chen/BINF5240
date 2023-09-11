@@ -2,16 +2,17 @@ sasp = "TTGAGTAGACGAAGAGGTGTCATGTCAAATCAATTTAAAGAAGAGCTTGCAAAAGAGCTAGGCTTTTATGAT
 met_codon = "ATG"
 #print(sasp)
 
-pos = sasp.find(met_codon)+1
+pos = sasp.find(met_codon)
+pos_frame = (pos%3)+1
 
-print(pos)
+#print(pos, pos_frame)
 
-if pos == 1:
+if sasp.startswith(met_codon):
     print("The SASP gene start with a Met codon")
 else:
     print("The SASP gene dosen't start with a Met codon")
 
-if pos%3 == 1:
+if pos_frame == 1:
     print("The SASP gene have a frame 1 Met codon")
 else:
     print("The SASP gene doesn't have a frame 1 Met codon")
