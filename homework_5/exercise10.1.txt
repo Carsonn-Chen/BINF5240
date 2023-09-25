@@ -1,0 +1,2 @@
+Method:
+use a dictionary for complement and use get() to avoid key error. use reversed() to reverse sequence. use Comprehensions to build lists using iteration. Finally join the list to a string then I get a reversed complement sequence.

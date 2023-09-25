@@ -1,0 +1,2 @@
+Method:
+use a dictionary to count each in seq. use .get() to avoid key error. Then use sorted() to sort with lambda sorting based on count number and set reverse = True to make it descend.
