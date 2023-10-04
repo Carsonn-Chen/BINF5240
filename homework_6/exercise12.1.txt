@@ -1,0 +1,2 @@
+Method:
+set a dict to store num of amino acids. Then use gzip open to open gz file and use Bio parse to read sequence in. use .get to avoid key error. Then sfor each amino acid, calculate the frequency. In the end use lambda x: x[1] to use value to get the max and the min amino acid. and use abs() to see which one is the biggest difference of the two sequence.

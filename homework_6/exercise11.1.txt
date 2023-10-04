@@ -1,0 +1,2 @@
+Method:
+First use an if statement to determine if the user has entered a filename and gene name, if not remind the user to check. After that determine whether the file exists or not, if it doesn't then prompt the user to check. Then read the csv in and stored as a dictionary. The expression values are recorded through a for loop. Finally set up a function to calculate the mean and standard deviation and output them separately.
