@@ -1,0 +1,5 @@
+Method
+use Samfile() to read the bam file. Then set up 3 variables presenting the highest coverage and its locus and counts. Then use sets of if statements to filter out bad alignments. use len(counts) == 2 to find the single diploid organism and compare it with the highest record to get the highest coverage locus. Finally, if the locus is not None, print the information about the locus, else print no found.
+
+Errors met
+"no index available for pileup": missing file "10_Normal_Chr21.bam.bai". It's an index file for BAM and when seeking some genome position from a sorted BAM file, it needs an index file that stores the BAM file offsets of genome positions.
