@@ -17,11 +17,11 @@ for entry in root.findall(ns+'entry'):
         author = authorList.findall(ns+'person')
         title = citation.find(ns+'title')
 
-        if citation:
+        if citation is not None:
             print("citation", citation.attrib)
-        if title:
+        if title is not None:
             print("Title:", title.text)
-        if author:
+        if author is not None:
             print("author:")
             for each in author:
                 print(each.attrib)

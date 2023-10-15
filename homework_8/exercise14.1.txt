@@ -1,0 +1,2 @@
+Method:
+Get the xml file in uniprot through urllib.request, parse it through the parser and get the root. look for each entry, then look for reference, citation, author, and title in each entry respectively. if they are not none then print them, finally use print() to print a blank line.
