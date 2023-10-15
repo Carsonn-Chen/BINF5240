@@ -11,5 +11,13 @@ for entry in root.findall(ns+'entry'):
     print(entry.tag, entry.attrib, entry.text)
     for reference in entry.findall(ns+'reference'):
         print(reference.tag, reference.attrib, reference.text)
-        for citation in reference.findall(ns+'citation'):
-            print(citation.tag, citation.attrib, citation.text)
+
+        citation = reference.find(ns+'citation')
+        authorList = citation.find(ns+'authorList')
+        author = authorList.findall(ns+'person')
+        title = citation.find(ns+'title')
+
+        print("citation", citation.attrib)
+        print("Title:", title.text)
+        print("Authors:", author)
+        print()
