@@ -8,7 +8,7 @@ root = tree.getroot()
 ns = '{http://uniprot.org/uniprot}'
 
 for entry in root.findall(ns+'entry'):
-    print(entry.tag, entry.attrib, entry.text)
+    print(entry.attrib)
     for reference in entry.findall(ns+'reference'):
         print(reference.tag, reference.attrib, reference.text)
 
@@ -17,7 +17,12 @@ for entry in root.findall(ns+'entry'):
         author = authorList.findall(ns+'person')
         title = citation.find(ns+'title')
 
-        print("citation", citation.attrib)
-        print("Title:", title.text)
-        print("Authors:", author)
+        if citation:
+            print("citation", citation.attrib)
+        if title:
+            print("Title:", title.text)
+        if author:
+            print("author:")
+            for each in author:
+                print(each.attrib)
         print()
