@@ -1,0 +1,11 @@
+Method:
+
+for MyDNAStuff.py:
+define 6 functions to read sequence from file, check if the sequence is valid, do complement, do reversed complement, return reversed sequence in string and calculate the gc content.
+
+for codon_table.py:
+define 5 functions to read codon table from file, translate single amino_acid, check if the codon is start codon, handle with 'N' and translate whole sequence.
+different from exercise 9.1. I make codons and starts dict into one dict named codon_table. And the value of this dict is another dict store the AAs and starts status.
+
+for main:
+import all functions from MyDNAStuff.py and codon_table.py and read filename from command line. Then try the use of these modules

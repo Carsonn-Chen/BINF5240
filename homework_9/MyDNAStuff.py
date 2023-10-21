@@ -6,7 +6,7 @@ def read_seq_from_filename(filepath):
 
 
 def is_valid(seq):
-    valid_nuc = {'A', 'T', 'C', 'G', 'N'}
+    valid_nuc = ['A', 'T', 'C', 'G', 'N']
     for nuc in seq:
         if nuc not in valid_nuc:
             return False
@@ -21,6 +21,10 @@ def complement(seq):
 def reversed_complement(seq):
     complement_dict = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C', 'N': 'N'}
     return ''.join(complement_dict[base] for base in reversed(seq))
+
+
+def reverse(seq):
+    return ''.join(reversed(seq))
 
 
 def gc_content(seq):

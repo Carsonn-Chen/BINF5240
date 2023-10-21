@@ -1,0 +1,2 @@
+Method:
+Use pandas to read csv. Then use min() to find the genes with at least two distinct peptides in all samples and max() for at least one sample. use sum() to count and then print them.
