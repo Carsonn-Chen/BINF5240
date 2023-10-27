@@ -1,0 +1,2 @@
+Method:
+add some try/except blocks when reading file. If it gives IOError print the error and exit with excepted value "1". And add some blocks when handle with codon or base. If there is KEYError, then print unknown codon or base and exit with "1".
