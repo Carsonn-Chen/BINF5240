@@ -1,0 +1,2 @@
+Method:
+set a class and name it with Capwords convention. Then put all function into class. And use them in exercise19.1.py

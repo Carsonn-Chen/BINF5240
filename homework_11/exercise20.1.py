@@ -24,5 +24,6 @@ brca2_ids = search_human_brca2_refseq()
 print(brca2_ids)
 brca2_fasta = fetch_protein_sequences(brca2_ids)
 
-with open("brca2_sequences.fasta", "w") as fasta_file:
-    fasta_file.write(brca2_fasta)
+save_file = open("brca2_sequences.fasta", "w")
+save_file.write(brca2_fasta)
+save_file.close()

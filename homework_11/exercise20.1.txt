@@ -1,0 +1,5 @@
+Method:
+First import EntreZ. Then set a function to search protein using handle and esearch. After that set a function to use efetch to fetch the protein sequence and return records. use .write to write out the sequence into a FASTA file.
+
+Result:
+the fasta file is brca2_sequences.fasta and the most similar mouse protein is breast cancer type 2 susceptibility protein homolog [Mus musculus]. The accession id is NP_001074470.1
