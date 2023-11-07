@@ -4,7 +4,7 @@ def read_seq_from_filename(filepath):
         dna_seq = ''.join(seq_file.read().split())
         dna_seq = dna_seq.upper()
         return dna_seq
-    except IOError:
+    except IndexError:
         print("Error reading file")
         exit(1)
 
