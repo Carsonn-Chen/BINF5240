@@ -1,0 +1,2 @@
+Method:
+after connect to the datebase. first select tax_id from name using common name. Then from taxonomy select scientific name using tax_id

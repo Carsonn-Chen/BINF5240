@@ -1,0 +1,2 @@
+Method:
+using blastp to do blast. set best title and best score to store the best reserved record. if a protein has a significant E-value then output. and if the score is more than best record. update best record to new one.
