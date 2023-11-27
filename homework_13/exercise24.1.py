@@ -24,4 +24,5 @@ class Name(SQLObject):
 
 
 cname = Name.selectBy(name=query)[0]
+print(Name.selectBy(name=query))
 print(cname.taxa.scientificName)
