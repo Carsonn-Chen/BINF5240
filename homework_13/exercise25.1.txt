@@ -1,0 +1,2 @@
+Method:
+after set sqlobject class, I can operate and query datebase as pyython class. So use selectBy to query user-applied organism name in table name. Then find the same taxid in table taxonomy. children has been set a multiplejoin key by parient_id. Then print every children's scientific name.
